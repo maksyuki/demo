@@ -9,7 +9,8 @@
 name: Upload Python Package
 
 on:
-  push: [main]
+  push:
+    branches: [ main ]
   release:
     types: [published]
 
