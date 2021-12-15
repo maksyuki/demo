@@ -32,13 +32,12 @@ jobs:
     - name: Build package
       run: python -m build
     - name: Publish a Python distribution to Test PyPI a
+      run: |
+        echo "#############################################"
+        echo ${{ secrets.TEST_PYPI_API_TOKEN }}
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         verbose: true
         user: __token__
         password: pypi-AgENdGVzdC5weXBpLm9yZwIkYWU3M2I5N2ItZTM2Yy00NmYyLWEyZDUtYjljZGE0ZDA0MDU2AAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiCJJzqAsptb5FQHiAXEccAzUGFGQU5Sc70ur52YvtH-Pw
         repository_url: https://test.pypi.org/legacy/
-
-      # run: |
-        # python -m pip install --upgrade twine
-        # python -m twine upload --repository testpypi dist/*
