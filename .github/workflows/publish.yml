@@ -35,6 +35,8 @@ jobs:
       run: |
         echo "#############################################"
         echo ${{ secrets.TEST_PYPI_API_TOKEN }}
+        echo ${{ secrets.DEMO_TOKEN }}
+        
       # uses: pypa/gh-action-pypi-publish@release/v1
       # with:
       #   verbose: true
