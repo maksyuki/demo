@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="example-pkg-taichi-HERE",
-    version="0.0.3-alpha",
+    version="0.0.4",
     author="taichidemo",
     author_email="taichidemo@example.com",
     description="A small example package",
